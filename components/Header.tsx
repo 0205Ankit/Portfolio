@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default async function Header() {
+export default function Header() {
   return (
     <>
       <div className="w-11/12 mx-auto my-10 flex justify-between items-center">
