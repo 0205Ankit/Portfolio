@@ -36,29 +36,29 @@ export default function Card({gitLink,liveLink,name,url,alignRight}:CardProps){
                     target="_blank"
                     className="flex gap-2 items-center text-base z-10 text-white"
                   >
-                    <LuGithub className="text-3xl text-white" />
-                    <span className="underline text-white">{gitLink}</span>
+                    <LuGithub className="text-3xl" />
+                    <span className="underline">{gitLink}</span>
                   </a>
                   <a
                     href={`${liveLink}`}
                     target="_blank"
                     className="flex gap-2 items-center text-base mt-3 z-10 text-white"
                   >
-                    <LuLink className="text-3xl text-white" />
-                    <span className="underline text-white">{liveLink}</span>
+                    <LuLink className="text-3xl" />
+                    <span className="underline">{liveLink}</span>
                   </a>
                 </div>
                 {name === "Netflix Clone" && (
-                  <div className="notes">
-                    <p className="text-sm mt-5 text-white">
+                  <div className="notes text-white">
+                    <p className="text-sm mt-5">
                       Note: Make sure to put your Safe Browsing settings to No
                       protection (for Google chrome)
                     </p>
-                    <p className="text-sm mt-3 text-white">
+                    <p className="text-sm mt-3">
                       Go to settings &gt; Privacy & Security &gt; Security &gt;
                       No protection{" "}
                     </p>
-                    <p className="text-sm mt-3 text-white">
+                    <p className="text-sm mt-3">
                       ( The site is storing username and password to a unknown
                       database so your browser may restrict you from visiting
                       pages like this )
@@ -67,15 +67,15 @@ export default function Card({gitLink,liveLink,name,url,alignRight}:CardProps){
                 )}
 
                 {name === "User Log" && (
-                  <div className="notes">
-                    <p className="text-sm mt-5 text-white">
+                  <div className="notes text-white">
+                    <p className="text-sm mt-5">
                       AWS S3 bucket is used for storing Image files, You can
                       view and update images from inside the app
                     </p>
-                    <p className="text-sm mt-3 text-white">
+                    <p className="text-sm mt-3">
                       RTK Query is used for fetching the Api&apos;s
                     </p>
-                    <p className="text-sm mt-3 text-white">
+                    <p className="text-sm mt-3">
                       ( The Backend and Database both are hosted on vercel
                       free-tier package so, In future the site may get broken
                       after exhausting the computing time and memory. You can
