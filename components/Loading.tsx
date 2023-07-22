@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Loading() {
   return (
-    <>
+    <div className="">
       <div className="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4">
         <div className="flex items-start w-fit gap-[5px] h-[50px] overflow-y-hidden">
           <Image src="/A.png" alt="logo" width={50} height={50}></Image>
@@ -25,6 +25,6 @@ export default function Loading() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
