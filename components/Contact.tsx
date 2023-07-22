@@ -13,7 +13,7 @@ export default function Contact() {
       <div
         id="contact"
         ref={myRef}
-        className="flex flex-col items-center w-6/12 mx-auto mt-[200px] gap-4 mb-20"
+        className="flex flex-col items-center w-6/12 max-md:w-full mx-auto mt-[200px] gap-4 mb-20"
       >
         <p
           className={`text-violet-500 text-center text-lg ${
@@ -23,14 +23,14 @@ export default function Contact() {
           03. What&apos;s Next?
         </p>
         <h3
-          className={`text-gray-200 text-6xl font-bold ${
+          className={`text-gray-200 text-6xl font-bold max-md:text-5xl ${
             inViewport && leaveCount === 0 && "animate-fadeUp2"
           }`}
         >
           Get In Touch
         </h3>
         <p
-          className={`text-gray-300 text-center ${
+          className={`text-gray-300 text-center max-md:text-sm ${
             inViewport && leaveCount === 0 && "animate-fadeUp3"
           }`}
         >

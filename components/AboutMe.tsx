@@ -8,7 +8,11 @@ export default function AboutMe() {
   const { inViewport, leaveCount } = useInViewport(myRef);
 
   return (
-    <div id="aboutMe" ref={myRef} className="mt-[300px] w-10/12 mx-auto">
+    <div
+      id="aboutMe"
+      ref={myRef}
+      className="mt-[300px] w-10/12 max-md:w-full max-md:mt-[200px] mx-auto"
+    >
       <div
         className={`text-2xl text-gray-300 font-semibold flex gap-3 items-center ${
           inViewport && leaveCount === 0 && "animate-fadeUp1"
@@ -18,8 +22,8 @@ export default function AboutMe() {
         <span className="whitespace-nowrap">About Me</span>
         <div className="h-[0.1px] w-full border-[0.1px] border-gray-500 "></div>
       </div>
-      <div className={`mt-10 text-gray-300 flex gap-10`}>
-        <div className="w-[60%]">
+      <div className={`mt-10 text-gray-300 flex gap-5 max-md:flex-col max-md:text-sm`}>
+        <div className="w-[60%] max-md:w-full">
           <p
             className={`${inViewport && leaveCount === 0 && "animate-fadeUp2"}`}
           >
@@ -55,7 +59,7 @@ export default function AboutMe() {
           </p>
         </div>
         <div
-          className={`w-[40%] h-fit grid grid-cols-2 gap-2 ${
+          className={`w-[40%] max-md:w-full h-fit grid grid-cols-2 gap-2 ${
             inViewport && leaveCount === 0 && "animate-fadeUp4"
           }`}
         >

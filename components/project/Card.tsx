@@ -29,7 +29,7 @@ export default function Card({gitLink,liveLink,name,url,alignRight}:CardProps){
             </div>
             {/* backSide */}
             <div className="card_back text-white flex justify-start">
-              <div className="card_body mx-20 my-10 text-white">
+              <div className="card_body w-10/12 mx-auto mt-8 mb-5 text-white">
                 <div className="links">
                   <a
                     href={`${gitLink}`}

@@ -103,6 +103,14 @@ module.exports = {
             transform: "translateX(0)",
           },
         },
+        enterFromRight: {
+          from: { opacity: 0, transform: "translateX(300px)" },
+          to: { opacity: 1, transform: "translateX(0)" },
+        },
+        exitToRight: {
+          from: { opacity: 1, transform: "translateX(0)" },
+          to: { opacity: 0, transform: "translateX(300px)" },
+        },
       },
       animation: {
         cycle: "cycle 5000ms linear infinite",
@@ -126,6 +134,8 @@ module.exports = {
         slideRight3: "slideInFromRight 1000ms ease-in",
         slideRight4: "slideInFromRight 1100ms ease-in",
         slideRight5: "slideInFromRight 1200ms ease-in",
+        enterFromRight: "enterFromRight 300ms ease",
+        exitToRight: "exitToRight 300ms ease",
       },
     },
   },
