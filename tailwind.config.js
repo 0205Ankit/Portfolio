@@ -25,34 +25,34 @@ module.exports = {
             transform: "translateY(0px)",
           },
           "10%": {
-            transform: "translateY(-45px)",
+            transform: "translateY(-40px)",
           },
           "20%": {
-            transform: "translateY(-45px)",
+            transform: "translateY(-40px)",
           },
           "30%": {
-            transform: "translateY(-95px)",
+            transform: "translateY(-90px)",
           },
           "40%": {
-            transform: "translateY(-95px)",
+            transform: "translateY(-90px)",
           },
           "50%": {
-            transform: "translateY(-145px)",
+            transform: "translateY(-140px)",
           },
           "60%": {
-            transform: "translateY(-145px)",
+            transform: "translateY(-140px)",
           },
           "70%": {
-            transform: "translateY(-190px)",
+            transform: "translateY(-185px)",
           },
           "80%": {
-            transform: "translateY(-190px)",
+            transform: "translateY(-185px)",
           },
           "90%": {
-            transform: "translateY(-240px)",
+            transform: "translateY(-235px)",
           },
           "100%": {
-            transform: "translateY(-240px)",
+            transform: "translateY(-235px)",
           },
         },
         lay: {

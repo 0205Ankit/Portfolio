@@ -17,10 +17,10 @@ export default function Loading() {
             <span>Tailwind</span>
             <span>Javascript</span>
           </div>
-          {/* <div className="absolute top-0 w-full h-[50px]">
+           <div className="absolute top-0 w-full h-[50px]">
             <div className="blur-top" />
             <div className="blur-bottom" />
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
