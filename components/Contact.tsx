@@ -42,7 +42,7 @@ export default function Contact() {
             inViewport && leaveCount === 0 && "animate-fadeUp4"
           }`}
         >
-          <ButtonMailto label="Say Hello" mailto="ankitbisht0205@gmail.com" />
+          <ButtonMailto label="Say Hello" mailto="singhankit8066@gmail.com" />
         </div>
       </div>
     </>

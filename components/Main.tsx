@@ -54,8 +54,8 @@ export default function Main() {
       <div className="fixed bottom-0 flex flex-col gap-[125px] items-center -right-14 animate-fadeIn max-md:hidden">
         <div className="text-gray-300 hover:text-violet-500 text-sm rotate-90 hover:translate-y-[-3px] tracking-[3px] transition-all ease-in">
           <ButtonMailto
-            label="ankitbisht0205@gmail.com"
-            mailto="ankitbisht0205@gmail.com"
+            label="singhankit8066@gmail.com"
+            mailto="singhankit8066@gmail.com"
           />
         </div>
         <div className="h-[100px] w-[1px] border-[0.5px] border-gray-300 " />
