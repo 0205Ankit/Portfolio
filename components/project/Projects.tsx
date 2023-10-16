@@ -8,9 +8,10 @@ export default function Projects() {
   const myRef = useRef();
   const secondRef = useRef();
   const { inViewport, leaveCount } = useInViewport(myRef);
-  const { inViewport: second, leaveCount: secondCount } =useInViewport(secondRef);
+  const { inViewport: second, leaveCount: secondCount } =
+    useInViewport(secondRef);
 
-    console.log(second);
+  console.log(second);
 
   return (
     <div id="project" ref={myRef}>
@@ -274,6 +275,139 @@ export default function Projects() {
             </a>
           </div>
         </div>
+        {/* //////////////////////////////////////////////////////////////////////////////////////////// */}
+        <div className="relative mt-20 max-md:hidden">
+          <div
+            className={`${
+              inViewport && leaveCount === 0 && "animate-slideLeft1"
+            }`}
+          >
+            <Card
+              gitLink="https://github.com/0205Ankit/CoinView-client"
+              liveLink="https://coin-view-server-3yb8.vercel.app/"
+              name="coinview"
+              url="/coinview.png"
+            />
+          </div>
+          <div className="min-w-[50%] max-w-[50%] absolute top-2/4 right-0 -translate-y-2/4 z-10">
+            <p
+              className={`text-violet-500 text-right ${
+                inViewport && leaveCount === 0 && "animate-slideRight1"
+              }`}
+            >
+              Featured Project
+            </p>
+            <h1
+              className={`text-gray-300 text-right text-2xl font-semibold mt-1 ${
+                inViewport && leaveCount === 0 && "animate-slideRight2"
+              }`}
+            >
+              CoinView
+            </h1>
+            <div
+              className={`py-4 px-5 text-right rounded-md bg-darkGrey mt-4 text-gray-300 ${
+                inViewport && leaveCount === 0 && "animate-slideRight3"
+              }`}
+            >
+              CoinView, created using React and Express. You can see the current
+              prices of all the cryptocurrencies .{" "}
+              <a
+                className="text-violet-500"
+                href="https://coinmarketcap.com/api/"
+                target="_blank"
+              >
+                CoinMarketCap Api
+              </a>{" "}
+              is used for fetching the latest price of the Coins.
+            </div>
+            <div
+              className={`flex gap-4 tracking-[1.5px] text-gray-300 justify-end text-sm mt-4 ${
+                inViewport && leaveCount === 0 && "animate-slideRight4"
+              }`}
+            >
+              <span>React</span>
+              <span>Redux</span>
+              <span>RTK query</span>
+              <span>Express.js</span>
+              <span>Tailwind</span>
+            </div>
+            <div
+              className={`flex gap-3 justify-end mt-3 ${
+                inViewport && leaveCount === 0 && "animate-slideRight5"
+              }`}
+            >
+              <a
+                href="https://github.com/0205Ankit/CoinView-client"
+                target="_blank"
+              >
+                <LuGithub className="text-gray-300 hover:text-violet-500 text-2xl" />
+              </a>
+              <a
+                href="https://coin-view-server-3yb8.vercel.app/"
+                target="_blank"
+              >
+                <LuLink className="text-gray-300 hover:text-violet-500 text-2xl" />
+              </a>
+            </div>
+          </div>
+        </div>
+        {/* /////////////////////////////////////////////////////////////////////////////////////////// */}
+        <div className="bg-darkGrey rounded-md py-10 mt-20 px-10 md:hidden max-[400px]:px-5 ">
+          <p
+            className={`text-violet-500 ${
+              second && secondCount === 0 && "animate-slideRight1"
+            }`}
+          >
+            Featured Project
+          </p>
+          <h1
+            className={`text-gray-300 text-2xl font-semibold mt-1 ${
+              second && secondCount === 0 && "animate-slideRight2"
+            }`}
+          >
+            CoinView
+          </h1>
+          <p
+            className={`rounded-md bg-darkGrey mt-4 text-gray-300 text-[15px] ${
+              second && secondCount === 0 && "animate-slideRight3"
+            }`}
+          >
+            CoinView, created using React and Express. You can see the current
+            prices of all the cryptocurrencies .{" "}
+            <a
+              className="text-violet-500"
+              href="https://coinmarketcap.com/api/"
+              target="_blank"
+            >
+              CoinMarketCap Api
+            </a>{" "}
+            is used for fetching the latest price of the Coins.
+          </p>
+          <div
+            className={`flex gap-2 tracking-[1px] text-gray-300 justify-end text-xs flex-wrap mt-5 ${
+              second && secondCount === 0 && "animate-slideRight4"
+            }`}
+          >
+            <span>React</span>
+            <span>Redux</span>
+            <span>RTK query</span>
+            <span>Express.js</span>
+            <span>Tailwind</span>
+          </div>
+          <div
+            className={`flex gap-3 justify-end mt-3 ${
+              second && secondCount === 0 && "animate-slideRight5"
+            }`}
+          >
+            <a href="https://github.com/0205Ankit/userLog" target="_blank">
+              <LuGithub className="text-gray-300 hover:text-violet-500 text-2xl" />
+            </a>
+            <a href="https://user-log.vercel.app/" target="_blank">
+              <LuLink className="text-gray-300 hover:text-violet-500 text-2xl" />
+            </a>
+          </div>
+        </div>
+        {/* ////////////////////////////////////////////////// */}
       </div>
     </div>
   );
