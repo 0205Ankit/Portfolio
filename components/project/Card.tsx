@@ -99,12 +99,12 @@ export default function Card({
                   <p className="text-sm mt-3">
                     RTK Query is used for fetching the Api&apos;s
                   </p>
-                  <p className="text-sm mt-3">
+                  {/* <p className="text-sm mt-3">
                     ( The Backend and Database both are hosted on vercel
                     free-tier package so, In future the site may get broken
                     after exhausting the computing time and memory. You can
                     still check the source code on github )
-                  </p>
+                  </p> */}
                 </div>
               )}
             </div>

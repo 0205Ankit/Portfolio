@@ -276,7 +276,7 @@ export default function Projects() {
           </div>
         </div>
         {/* //////////////////////////////////////////////////////////////////////////////////////////// */}
-        <div className="relative mt-20 max-md:hidden">
+        <div className="relative max-md:mt-20 mt-[200px] max-md:hidden">
           <div
             className={`${
               inViewport && leaveCount === 0 && "animate-slideLeft1"
