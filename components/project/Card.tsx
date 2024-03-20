@@ -72,39 +72,20 @@ export default function Card({
                 </div>
               )}
 
-              {name === "User Log" && (
+              {name === "ChatFrame" && (
                 <div className="notes text-white">
                   <p className="text-sm mt-5">
-                    AWS S3 bucket is used for storing Image files, You can view
-                    and update images from inside the app
+                    UploadThing is used for managing photo uploads.
                   </p>
                   <p className="text-sm mt-3">
-                    RTK Query is used for fetching the Api&apos;s
+                    TRPC is used for fetching data from the server.
                   </p>
                   <p className="text-sm mt-3">
-                    ( The Backend and Database both are hosted on vercel
-                    free-tier package so, In future the site may get broken
-                    after exhausting the computing time and memory. You can
-                    still check the source code on github )
+                    ( The Express.js server is solely utilized for implementing
+                    socket.io. The server is hosted on Railway, and the Next.js
+                    application is deployed on Vercel. Read more about the
+                    project on github. )
                   </p>
-                </div>
-              )}
-
-              {name === "coinview" && (
-                <div className="notes text-white">
-                  <p className="text-sm mt-5">
-                    CoinMarketCap api is used to fetch the latest prices of the
-                    cryptocurrencies
-                  </p>
-                  <p className="text-sm mt-3">
-                    RTK Query is used for fetching the Api&apos;s
-                  </p>
-                  {/* <p className="text-sm mt-3">
-                    ( The Backend and Database both are hosted on vercel
-                    free-tier package so, In future the site may get broken
-                    after exhausting the computing time and memory. You can
-                    still check the source code on github )
-                  </p> */}
                 </div>
               )}
             </div>

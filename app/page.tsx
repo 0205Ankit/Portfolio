@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <>
-      <div className={`${display==="hidden"?"block":"hidden"}`}>
+      <div className={`${display === "hidden" ? "block" : "hidden"}`}>
         <Main />
       </div>
       <div className={`z-10 w-screen h-screen bg-[#000] ${display}`}>

@@ -22,7 +22,9 @@ export default function AboutMe() {
         <span className="whitespace-nowrap">About Me</span>
         <div className="h-[0.1px] w-full border-[0.1px] border-gray-500 "></div>
       </div>
-      <div className={`mt-10 text-gray-300 flex gap-5 max-md:flex-col max-md:text-sm`}>
+      <div
+        className={`mt-10 text-gray-300 flex gap-5 max-md:flex-col max-md:text-sm`}
+      >
         <div className="w-[60%] max-md:w-full">
           <p
             className={`${inViewport && leaveCount === 0 && "animate-fadeUp2"}`}
@@ -40,22 +42,6 @@ export default function AboutMe() {
           >
             My main focus these days is building personal projects which
             challenges me and help me learn new technologies
-          </p>
-          <p
-            className={`mt-4 ${
-              inViewport && leaveCount === 0 && "animate-fadeUp4"
-            }`}
-          >
-            I have done an internship for 2 months at{" "}
-            <a
-              className="text-violet-500"
-              href="https://itaxeasy.com"
-              target="_blank"
-            >
-              itaxEasy
-            </a>{" "}
-            as a Web Dev Intern, where I contributed to the successful
-            management and enhancement of the application&apos;s frontend.
           </p>
         </div>
         <div

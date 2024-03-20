@@ -11,6 +11,7 @@ import Contact from "./Contact";
 import { MdClose } from "react-icons/md";
 import { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import WorkExperience from "./work/workExp";
 
 export default function Main() {
   const [sidebar, setSidebar] = useState(false);
@@ -27,8 +28,10 @@ export default function Main() {
         <AboutMe />
         {/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
 
-        <Projects />
+        <WorkExperience />
+        {/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
 
+        <Projects />
         {/* //////////////////////////////////////////////////////////////////////////////////////////////////////// */}
 
         <Contact />
