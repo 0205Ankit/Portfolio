@@ -20,7 +20,7 @@ export default function Contact() {
             inViewport && leaveCount === 0 && "animate-fadeUp1"
           }`}
         >
-          03. What&apos;s Next?
+          04. What&apos;s Next?
         </p>
         <h3
           className={`text-gray-200 text-6xl font-bold max-md:text-5xl ${
