@@ -46,7 +46,7 @@ export default function Header({setSidebar}) {
             </span>
           </AnchorLink>
           <a
-            href="/Resume.pdf"
+            href="/Ankit_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="py-2 px-5 border-[1.5px] rounded-md border-violet-500 animate-lay4"

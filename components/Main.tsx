@@ -117,7 +117,7 @@ export default function Main() {
                   </span>
                 </AnchorLink>
                 <a
-                  href="/Resume.pdf"
+                  href="/Ankit_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="py-2 px-5 border-[1.5px] w-fit rounded-md text-violet-500 border-violet-500"

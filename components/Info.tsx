@@ -15,7 +15,7 @@ export default function Info() {
         experiences and practical applications.
       </p>
       <a
-        href="/Resume.pdf"
+        href="/Ankit_Resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="w-fit p-[12px_20px] text-sm max-md:p-[6px_10px] mt-7 max-md:mt-4 max-md:text-xs font-medium border-[1.5px] rounded-md border-violet-500 text-violet-500 animate-fadeUp5"
