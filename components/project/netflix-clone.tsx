@@ -11,7 +11,6 @@ const NetflixClone = ({
 }) => {
   return (
     <div>
-      {" "}
       <div className="relative max-md:hidden">
         <div
           className={`${
